@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Teaser Creator</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        form { margin-bottom: 20px; }
+        label { display: block; margin-top: 10px; }
+        input, textarea { width: 100%; padding: 8px; margin-top: 5px; }
+        button { margin-top: 10px; padding: 10px; cursor: pointer; }
+        #teaserList { margin-top: 20px; }
+        .teaser { border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Job Teaser Creator</h1>
+        
+        <button id="prefillBtn">Pre-fill with Sample Data</button>
+        
+        <form id="jobForm">
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" required>
+            <label for="company">Company:</label>
+            <input type="text" id="company" required>
+            
+            <label for="location">Location:</label>
+            <input type="text" id="location" required>
+            
+            <label for="description">Job Description:</label>
+            <textarea id="description" rows="4" required></textarea>
+            
+            <button type="submit">Create Teaser</button>
+        </form>
+
+        <div id="teaserList">
+            <h2>Created Job Teasers</h2>
+            <!-- Teasers will be displayed here -->
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code will go here
+    </script>
+</body>
+</html>
